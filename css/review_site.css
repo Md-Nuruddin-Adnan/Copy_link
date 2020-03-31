@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+ 
+::after, ::before {
+  box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+   
+a, a:hover {
+  text-decoration: none;
+}
+
+.col-md-4, .col-6 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body {
+  background: url(../images/Background.png) no-repeat top left/cover;
+  font-family: 'Roboto', sans-serif;
+}
+/* basic css end */
+
+/* main css start */
+
+/* === header section start === */
+.header .banner_content {
+  min-height: 400px;
+  display: grid;
+  place-items: center;
+}
+
+.header h1 {
+  font-size: 45px;
+  color: #2c353e;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.header h1 span {
+  color: #0067ce;
+}
+
+.header p {
+  font-size: 28px;
+  color: #2c353e;
+  line-height: 36px;
+  font-weight: 300;
+}
+/* ===//end of header section === */
+
+/* === link section start === */
+.link .link-box {
+  background-color: #fff;
+  border: 1px solid #00c0fa;
+  border-bottom-color: #015eea;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+}
+
+.link .logo-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4b4b4b;
+}
+
+.link .copy-btn {
+  background: linear-gradient(to top, #015eea, #00c0fa);
+  color: #fff;
+  border: transparent;
+  transition: all 0.2s linear;
+  padding: 7px 30px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.link .copy-btn:hover {
+  background: linear-gradient(to bottom, #015eea, #00c0fa);
+}
+
+/* ===//end of link section === */
+
+
+
+/* === Responsive part  === */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .header p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .link .link-box {
+    padding: 15px;
+  }
+  .link .logo-name {
+    font-size: 14px;
+  }
+
+  .link .copy-btn {
+    padding: 7px 15px;
+  }
+}
