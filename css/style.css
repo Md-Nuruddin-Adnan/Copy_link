@@ -33,9 +33,7 @@ body {
 
 /* === header section start === */
 .header .banner_content {
-  min-height: 400px;
-  display: grid;
-  place-items: center;
+  padding: 100px 0 50px 0;
 }
 
 .header h1 {
@@ -57,6 +55,33 @@ body {
   font-weight: 300;
 }
 /* ===//end of header section === */
+
+/* === tab section start === */
+.tab {
+  margin-bottom: 50px;
+}
+
+.tab ul li a {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #444;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 25px;
+  min-width: 150px;
+  padding: 10px 15px;
+  margin: 10px;
+  display: block;
+  text-align: center;
+}
+
+.tab ul li a.active {
+  background: #00a9f7;
+  border: 1px solid #00a9f7;
+  color: #fff;
+}
+
+/* === tab section end === */
 
 /* === link section start === */
 .link .link-box {
@@ -88,6 +113,11 @@ body {
   background: linear-gradient(to bottom, #015eea, #00c0fa);
 }
 
+#circle_logo img {
+  width: 120px;
+  margin: 10px auto;
+  display: block;
+}
 /* ===//end of link section === */
 
 
@@ -101,6 +131,10 @@ body {
     line-height: 28px;
   }
 
+  .header .banner_content {
+    padding: 60px 0 50px 0;
+  }
+
   .link .link-box {
     padding: 15px;
   }
@@ -109,6 +143,15 @@ body {
   }
 
   .link .copy-btn {
+    padding: 7px 15px;
+  }
+
+  #circle_logo img {
+    width: 90px;
+  }
+
+  .tab ul li a {
+    min-width: 120px;
     padding: 7px 15px;
   }
 }
